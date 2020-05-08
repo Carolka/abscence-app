@@ -7,7 +7,7 @@ const express = require('express');
 const  app  = express();
 
 app.get('/', function (req, res) {
-  res.send('<html><body><h1>Hello World</h1></body></html>');
+  res.send('<html><body><h1>Hello World2</h1></body></html>');
 });
 
 app.post('/submit-data', function (req, res) {
@@ -23,5 +23,5 @@ app.delete('/delete-data', function (req, res) {
 });
 
 var server = app.listen(8000, function () {
-  console.log('Node server is running..');
+  console.log('Node server is running on http://localhost:8000');
 });
